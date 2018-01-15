@@ -1,0 +1,184 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// русский resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_HOMECHESS           ICON                    "HomeChess.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_HOMECHESS MENU 
+BEGIN
+    POPUP "Игра"
+    BEGIN
+        MENUITEM "Новая игра",                  ID_NEWGAME
+        MENUITEM SEPARATOR
+        MENUITEM "Сохранить игру",              ID_SAVEGAME
+        MENUITEM "Открыть последнюю сохраненную игру", ID_LOADGAME
+        MENUITEM SEPARATOR
+        MENUITEM "Выход",                       IDM_EXIT
+    END
+    POPUP "Справка"
+    BEGIN
+        MENUITEM "О программе",                 IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_HOMECHESS ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  22, 17, 230, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_HOMECHESS,IDC_MYICON,14,9,16,16
+    LTEXT           "HomeChess Version 1.0",IDC_STATIC,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_WHITE_ROOK_NORMAL   BITMAP                  "assets\\normal\\white_rook.bmp"
+IDB_BLACK_BISHOP_NORMAL BITMAP                  "assets\\normal\\black_bishop.bmp"
+IDB_BLACK_KING_NORMAL   BITMAP                  "assets\\normal\\black_king.bmp"
+IDB_BLACK_KNIGHT_NORMAL BITMAP                  "assets\\normal\\black_knight.bmp"
+IDB_BLACK_QUEEN_NORMAL  BITMAP                  "assets\\normal\\black_queen.bmp"
+IDB_BLACK_ROOK_NORMAL   BITMAP                  "assets\\normal\\black_rook.bmp"
+IDB_BLACK_PAWN_NORMAL   BITMAP                  "assets\\normal\\pawn_black.bmp"
+IDB_WHITE_PAWN_NORMAL   BITMAP                  "assets\\normal\\pawn_white.bmp"
+IDB_WHITE_BISHOP_NORMAL BITMAP                  "assets\\normal\\white_bishop.bmp"
+IDB_WHITE_KING_NORMAL   BITMAP                  "assets\\normal\\white_king.bmp"
+IDB_WHITE_KNIGHT_NORMAL BITMAP                  "assets\\normal\\white_knight.bmp"
+IDB_WHITE_QUEEN_NORMAL  BITMAP                  "assets\\normal\\white_queen.bmp"
+IDB_WHITE_ROOK_HIGHLIGHT BITMAP                  "assets\\highlight\\white_rook.bmp"
+IDB_BLACK_BISHOP_HIGHLIGHT BITMAP                  "assets\\highlight\\black_bishop.bmp"
+IDB_BLACK_KING_HIGHLIGHT BITMAP                  "assets\\highlight\\black_king.bmp"
+IDB_BLACK_KNIGHT_HIGHLIGHT BITMAP                  "assets\\highlight\\black_knight.bmp"
+IDB_BLACK_QUEEN_HIGHLIGHT BITMAP                  "assets\\highlight\\black_queen.bmp"
+IDB_BLACK_ROOK_HIGHLIGHT BITMAP                  "assets\\highlight\\black_rook.bmp"
+IDB_BLACK_PAWN_HIGHLIGHT BITMAP                  "assets\\highlight\\pawn_black.bmp"
+IDB_WHITE_PAWN_HIGHLIGHT BITMAP                  "assets\\highlight\\pawn_white.bmp"
+IDB_WHITE_BISHOP_HIGHLIGHT BITMAP                  "assets\\highlight\\white_bishop.bmp"
+IDB_WHITE_KING_HIGHLIGHT BITMAP                  "assets\\highlight\\white_king.bmp"
+IDB_WHITE_KNIGHT_HIGHLIGHT BITMAP                  "assets\\highlight\\white_knight.bmp"
+IDB_WHITE_QUEEN_HIGHLIGHT BITMAP                  "assets\\highlight\\white_queen.bmp"
+IDB_WHITE_ROOK_DRAGGED  BITMAP                  "assets\\dragged\\white_rook.bmp"
+IDB_BLACK_BISHOP_DRAGGED BITMAP                  "assets\\dragged\\black_bishop.bmp"
+IDB_BLACK_KING_DRAGGED  BITMAP                  "assets\\dragged\\black_king.bmp"
+IDB_BLACK_KNIGHT_DRAGGED BITMAP                  "assets\\dragged\\black_knight.bmp"
+IDB_BLACK_QUEEN_DRAGGED BITMAP                  "assets\\dragged\\black_queen.bmp"
+IDB_BLACK_ROOK_DRAGGED  BITMAP                  "assets\\dragged\\black_rook.bmp"
+IDB_BLACK_PAWN_DRAGGED  BITMAP                  "assets\\dragged\\pawn_black.bmp"
+IDB_WHITE_PAWN_DRAGGED  BITMAP                  "assets\\dragged\\pawn_white.bmp"
+IDB_WHITE_BISHOP_DRAGGED BITMAP                  "assets\\dragged\\white_bishop.bmp"
+IDB_WHITE_KING_DRAGGED  BITMAP                  "assets\\dragged\\white_king.bmp"
+IDB_WHITE_KNIGHT_DRAGGED BITMAP                  "assets\\dragged\\white_knight.bmp"
+IDB_WHITE_QUEEN_DRAGGED BITMAP                  "assets\\dragged\\white_queen.bmp"
+IDB_CHESS_BOARD         BITMAP                  "assets\\boards\\board2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "HomeChess"
+    IDC_HOMECHESS           "HOMECHESS"
+END
+
+#endif    // русский resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
